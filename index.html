@@ -11,32 +11,23 @@
 <body>
 <div class="container">
     <div class="container">
+        <form id="form">
         <div class="row">
             <div class="col-sm">
-            One of three columns
+                <h3 class="card-title text-left">D.C. Metro Station Schedule</h3>
+                <p>Made By: <span id = 'fullName'>Programmer's Name</span></p>
             </div>
             <div class="col-sm">
-                <div class="containter">
-                    <div class="row">
-                        <div class="col-sm">
-                            <select class="form-control form-control-lg" id="stations" style="width:auto;">
-                                <option value="-" id="loading">Large select</option>
-                            </select>
-                        </div>
-                        <div class="col-sm">
-                            <h3 class="card-title text-left">Station Schedule</h3>
-                        </div>
-                    </div>
+                <select class="form-control form-control-lg" id="stations" style="width:auto;">
+                    <option value="-" id="Loading">Station List has not loaded</option>
+                </select>
+            </div>
+            <div class="col-sm">
+                <div class="form-group">
+                    <button id="form-button" class="btn btn-primary" type="button">Get Next Train Times</button>
                 </div>
             </div>
-            <div class="col-sm">
-                One of three columns
-            </div>
         </div>
-        <form id="form">
-            <div class="form-group">
-                <button id="form-button" class="btn btn-primary" type="button">Query API</button>
-            </div>
         </form>
         <div id="output">
         </div>
